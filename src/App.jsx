@@ -1,12 +1,25 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import FeatureSection from "./components/FeatureSection";
+import Footer from "./components/Footer";
+import Herosection from "./components/Herosection";
+import Navbar from "./components/Navbar";
+import Pricing from "./components/Pricing";
+import Testimonials from "./components/Testimonials";
+import Workflow from "./components/Workflow";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <>
+      <Navbar />
+      <div className="max-w-7xl mx-auto pt-20 px-6">
+        <Herosection />
+        <FeatureSection />
+        <Workflow />
+        <Pricing />
+        <Testimonials />
+        <Footer />
+      </div>
+    </>
+  );
 }
 
 export default App;
